@@ -3,8 +3,9 @@
 session_start();
 
 session_unset();
+
 if(isset($_SESSION['mensagem'])){?>
-    <script>
+    <<script>
         $window.onload = function(){
             M.toast({html: '<?php echo $_SESSION['mensagem']; ?>'});
         };
